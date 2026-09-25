@@ -1,0 +1,60 @@
+{
+  "name": "BeastValley",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+
+    "StarterPlayer": {
+      "$properties": {
+        "CameraMaxZoomDistance": 80,
+        "CharacterWalkSpeed": 18,
+        "CharacterUseJumpPower": true,
+        "CharacterJumpPower": 50
+      },
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+
+    "Workspace": {
+      "$properties": {
+        "StreamingEnabled": true,
+        "StreamingMinRadius": 128,
+        "StreamingTargetRadius": 512,
+        "Gravity": 196.2
+      }
+    },
+
+    "Lighting": {
+      "$properties": {
+        "Technology": "Voxel",
+        "Brightness": 2.5,
+        "GlobalShadows": true,
+        "ClockTime": 14.5,
+        "Ambient": [0.43, 0.43, 0.5],
+        "OutdoorAmbient": [0.55, 0.55, 0.6],
+        "EnvironmentDiffuseScale": 0,
+        "EnvironmentSpecularScale": 0
+      }
+    },
+
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
