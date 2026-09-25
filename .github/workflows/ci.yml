@@ -13,5 +13,5 @@ jobs:
         run: ./scripts/check.sh
       - uses: actions/upload-artifact@v4
         with:
-          name: BeastValley.rbxlx
-          path: build/BeastValley.rbxlx
+          name: GrowYourPets.rbxlx
+          path: build/GrowYourPets.rbxlx

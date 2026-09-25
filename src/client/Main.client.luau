@@ -1,5 +1,5 @@
 --[[
-	Beast Valley client bootstrap. Order matters: state first, then the
+	Grow Your Pets: Animal Farm — client bootstrap. Order matters: state first, then the
 	renderer (so entity spawns queue into it), then UI and input.
 ]]
 

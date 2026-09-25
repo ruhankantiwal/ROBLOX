@@ -1,6 +1,6 @@
-# Beast Valley: Mutant Army & Fruits — Game Design Document
+# Grow Your Pets: Animal Farm — Game Design Document
 
-*Formerly "Grow Your Pets — Animal Farm"*
+*The "Mutant Army & Fruits" update (design working title: Beast Valley)*
 
 | | |
 |---|---|
@@ -376,7 +376,7 @@ Each dropper upgrades (+35% per level, cost `150·tier^2.2 · 1.6^level`). Belt 
 | 🌟 Server Luck ×2 (15 min) | 149 | Boosts **everyone** in the server and announces the buyer by name (social flex) |
 | 💎 Gems 100 / 550 / 1,400 | 80 / 400 / 950 | Bulk bonus |
 
-### 11.3 VIP subscription — "Beast Valley VIP", $4.99/month
+### 11.3 VIP subscription — "Grow Your Pets VIP", $4.99/month
 +1 pet slot · ×1.5 coins · 2 Heist Tickets/day · 8 h offline earnings · +2 vault slots & longer base lock · +1 incubator · monthly exclusive **Golden Alpha Wolf** · VIP chat tag. Uses Roblox Experience Subscriptions (`MarketplaceService:PromptSubscriptionPurchase`); falls back to the lifetime pass until the subscription ID is configured.
 
 ### 11.4 Compliance & fair play (non-negotiable)
@@ -536,12 +536,13 @@ flowchart TB
 
 ### 15.5 Tooling
 * **Rojo** project (`default.project.json`), pinned with `rokit.toml`.
-* `./scripts/check.sh`: **luau-lsp** type check against the real Roblox API definitions, the headless logic tests (`tests/`: 21,600 pet-stat combos, 7,210 creature builds, odds sums, protocol round-trip, world geometry, balance sim), and the place build → `build/BeastValley.rbxlx`. CI runs the same script on every push (`.github/workflows/ci.yml`).
+* `./scripts/check.sh`: **luau-lsp** type check against the real Roblox API definitions, the headless logic tests (`tests/`: 21,600 pet-stat combos, 7,210 creature builds, odds sums, protocol round-trip, world geometry, balance sim), and the place build → `build/GrowYourPets.rbxlx`. CI runs the same script on every push (`.github/workflows/ci.yml`).
 
 ---
 
 ## 16. Production checklist before Oct 1
 
+- [ ] Put the build into the existing **Grow Your Pets Animal Farm** experience (README → "Put it in your existing Roblox game")
 - [ ] Create 8 game passes, 8 developer products, 1 subscription in Creator Hub → paste IDs into `src/shared/Config/Monetization.luau` (0 = hidden live / free in Studio)
 - [ ] Game Settings → Security → **Enable Studio Access to API Services** (to test saving)
 - [ ] Studio playtest with **4+ players** (Test → Clients and Servers) on the phone emulator: waves 1–10, a heist run, a steal, a mount escape

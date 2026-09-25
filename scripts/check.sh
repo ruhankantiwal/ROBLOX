@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-command quality gate: type-check against the real Roblox API, run the
 # headless logic tests, and build the place file.
-#   ./scripts/check.sh           -> build/BeastValley.rbxlx
+#   ./scripts/check.sh           -> build/GrowYourPets.rbxlx
 # Tools are downloaded once into .tools/ (Linux x86_64).
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -34,4 +34,4 @@ echo "== logic tests"
 LUAU="$TOOLS/luau" python3 tests/run.py
 
 echo "== build"
-"$TOOLS/rojo" build default.project.json -o build/BeastValley.rbxlx
+"$TOOLS/rojo" build default.project.json -o build/GrowYourPets.rbxlx

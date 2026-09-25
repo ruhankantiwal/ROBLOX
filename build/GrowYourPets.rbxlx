@@ -1653,7 +1653,7 @@ Monetization.ProductOrder = {
 Monetization.Subscription = {
 	id = "",
 	priceUsd = 4.99,
-	name = "Beast Valley VIP",
+	name = "Grow Your Pets VIP",
 	perks = {
 		"+1 pet equip slot",
 		"1.5x coins from every source",
@@ -2391,7 +2391,7 @@ Progression.FreeTicketCap = 2
 -- Launch codes. Rotate through creators' videos for tracking.
 Progression.Codes = {
 	RELEASE = { coins = 2500, heistTickets = 1 },
-	BEASTVALLEY = { fruit = "Blaze" },
+	GROWYOURPETS = { fruit = "Blaze" },
 	ZOMBIEPARTY = { mutagen = 200 },
 	SIXSEVEN = { capsule = "Rare" },
 }
@@ -3654,7 +3654,7 @@ return Signal
           <string name="Name">Main</string>
           <token name="RunContext">0</token>
           <string name="Source"><![CDATA[--[[
-	Beast Valley server bootstrap.
+	Grow Your Pets: Animal Farm — server bootstrap.
 
 	Services are plain ModuleScripts in ./Services with optional
 	:Init(services) and :Start() methods. Init wires references (no yielding),
@@ -3753,7 +3753,7 @@ RunService.Heartbeat:Connect(function(dt)
 	end
 end)
 
-print("[Beast Valley] server ready")
+print("[Grow Your Pets] server ready")
 ]]></string>
         </Properties>
       </Item>
@@ -3776,7 +3776,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Net = require(ReplicatedStorage.Shared.Net)
 
-local TOPIC = "BeastValley_Announce"
+local TOPIC = "GrowYourPets_Announce"
 
 local AnnounceService = { Name = "AnnounceService" }
 
@@ -4677,7 +4677,7 @@ local Signal = require(Shared.Util.Signal)
 local Format = require(Shared.Util.Format)
 local Progression = require(Shared.Config.Progression)
 
-local STORE_NAME = "BeastValley_Profiles_v1"
+local STORE_NAME = "GrowYourPets_Profiles_v1"
 local LOCK_EXPIRY = 600
 local AUTOSAVE = 120
 
@@ -9298,7 +9298,7 @@ function WorldBuilder:Hub()
 		label.Font = Enum.Font.FredokaOne
 		label.TextScaled = true
 		label.TextColor3 = Color3.fromRGB(255, 230, 90)
-		label.Text = "BEAST VALLEY"
+		label.Text = "GROW YOUR PETS\nANIMAL FARM"
 		local stroke = Instance.new("UIStroke")
 		stroke.Thickness = 4
 		stroke.Color = Color3.fromRGB(60, 20, 20)
@@ -12561,7 +12561,7 @@ return WorldClient
           <Properties>
             <string name="Name">Main</string>
             <string name="Source"><![CDATA[--[[
-	Beast Valley client bootstrap. Order matters: state first, then the
+	Grow Your Pets: Animal Farm — client bootstrap. Order matters: state first, then the
 	renderer (so entity spawns queue into it), then UI and input.
 ]]
 

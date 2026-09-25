@@ -10,7 +10,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Net = require(ReplicatedStorage.Shared.Net)
 
-local TOPIC = "BeastValley_Announce"
+local TOPIC = "GrowYourPets_Announce"
 
 local AnnounceService = { Name = "AnnounceService" }
 

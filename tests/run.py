@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Headless logic tests for Beast Valley.
+"""Headless logic tests for Grow Your Pets: Animal Farm.
 
 Bundles every pure module under src/shared (everything except Net, which
 needs a live DataModel) together with tests/shims.luau (tiny Vector3 /

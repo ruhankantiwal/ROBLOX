@@ -1,5 +1,5 @@
 --[[
-	Beast Valley server bootstrap.
+	Grow Your Pets: Animal Farm — server bootstrap.
 
 	Services are plain ModuleScripts in ./Services with optional
 	:Init(services) and :Start() methods. Init wires references (no yielding),
@@ -98,4 +98,4 @@ RunService.Heartbeat:Connect(function(dt)
 	end
 end)
 
-print("[Beast Valley] server ready")
+print("[Grow Your Pets] server ready")

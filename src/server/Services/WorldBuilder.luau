@@ -244,7 +244,7 @@ function WorldBuilder:Hub()
 		label.Font = Enum.Font.FredokaOne
 		label.TextScaled = true
 		label.TextColor3 = Color3.fromRGB(255, 230, 90)
-		label.Text = "BEAST VALLEY"
+		label.Text = "GROW YOUR PETS\nANIMAL FARM"
 		local stroke = Instance.new("UIStroke")
 		stroke.Thickness = 4
 		stroke.Color = Color3.fromRGB(60, 20, 20)

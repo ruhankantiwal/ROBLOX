@@ -57,7 +57,7 @@ Progression.FreeTicketCap = 2
 -- Launch codes. Rotate through creators' videos for tracking.
 Progression.Codes = {
 	RELEASE = { coins = 2500, heistTickets = 1 },
-	BEASTVALLEY = { fruit = "Blaze" },
+	GROWYOURPETS = { fruit = "Blaze" },
 	ZOMBIEPARTY = { mutagen = 200 },
 	SIXSEVEN = { capsule = "Rare" },
 }

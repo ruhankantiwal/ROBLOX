@@ -21,7 +21,7 @@ local Signal = require(Shared.Util.Signal)
 local Format = require(Shared.Util.Format)
 local Progression = require(Shared.Config.Progression)
 
-local STORE_NAME = "BeastValley_Profiles_v1"
+local STORE_NAME = "GrowYourPets_Profiles_v1"
 local LOCK_EXPIRY = 600
 local AUTOSAVE = 120
 

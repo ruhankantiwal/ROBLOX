@@ -154,7 +154,7 @@ Monetization.ProductOrder = {
 Monetization.Subscription = {
 	id = "",
 	priceUsd = 4.99,
-	name = "Beast Valley VIP",
+	name = "Grow Your Pets VIP",
 	perks = {
 		"+1 pet equip slot",
 		"1.5x coins from every source",
